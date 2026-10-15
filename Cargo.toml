@@ -1,0 +1,14 @@
+[package]
+name = "usbwhere"
+version = "0.1.0"
+edition = "2021"
+description = "For each USB device: bound drivers, /dev nodes and mount points"
+
+[dependencies]
+libc = "0.2.190"
+udev = "0.9.3"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
