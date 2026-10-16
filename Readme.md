@@ -3,6 +3,12 @@
 `lsusb` tells you a USB device is plugged in, but not **where to access it**.
 `usbwhere` shows, for each USB device and each of its interfaces, the driver bound to it and the matching nodes: `/dev/sdb1` (with its mount point), `/dev/video0`, `/dev/ttyACM0`, a network interface, a sound card...
 
+## Install
+
+```sh
+cargo install --git https://github.com/shoxxdj/usbwhere
+```
+
 ## Build
 
 You need a Rust toolchain and the libudev headers:
